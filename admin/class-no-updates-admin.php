@@ -122,11 +122,11 @@ class No_Updates_Admin
 		/**
 		 * Request Rating
 		 */
-		//if (boolval(get_transient($this->plugin_name . "-rate")) === false) {
-		wp_enqueue_script($this->plugin_name);
-		wp_enqueue_style($this->plugin_name);
+		if (boolval(get_transient($this->plugin_name . "-rate")) === false) {
+			wp_enqueue_script($this->plugin_name);
+			wp_enqueue_style($this->plugin_name);
 
-		include plugin_dir_path(__FILE__) . "partials/no-updates-admin-rating.php";
-		//}
+			include plugin_dir_path(__FILE__) . "partials/no-updates-admin-rating.php";
+		}
 	}
 }
