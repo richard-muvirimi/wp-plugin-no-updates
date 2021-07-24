@@ -13,9 +13,9 @@ Hide plugin and theme updates
 == Description ==
 
 Want to hide plugin and theme updates, maybe because:
--You have a stagging site and do not want the main site to be tempered with.
--Stop users from updating the site and maybe ending up breaking the site.
--Have multiple sites and want to maintain same plugin and theme versions across all sites
+1. You have a stagging site and do not want the main site to be tempered with.
+2. Stop users from updating the site and maybe ending up breaking the site.
+3. Have multiple sites and want to maintain same plugin and theme versions across all sites
 
 Just activate the plugin to hide updates and disable when you need to update
 
