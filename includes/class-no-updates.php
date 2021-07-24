@@ -80,6 +80,7 @@ class No_Updates
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
+		$this->define_ajax_hooks();
 	}
 
 	/**
@@ -123,6 +124,12 @@ class No_Updates
 		 * side of the site.
 		 */
 		require_once plugin_dir_path(dirname(__FILE__)) . 'public/class-no-updates-public.php';
+
+		/**
+		 * The class responsible for defining all actions that occur in the ajax-facing
+		 * side of the site.
+		 */
+		require_once plugin_dir_path(dirname(__FILE__)) . 'ajax/class-no-updates-ajax.php';
 
 		/**
 		 * Functions file
@@ -187,6 +194,23 @@ class No_Updates
 
 		$this->loader->add_action('wp_enqueue_scripts', $plugin_public, 'enqueue_styles');
 		$this->loader->add_action('wp_enqueue_scripts', $plugin_public, 'enqueue_scripts');
+	}
+
+	/**
+	 * Register all of the hooks related to the public-facing functionality
+	 * of the plugin.
+	 *
+	 * @access private
+	 * @since 1.0.0
+	 */
+	private function define_ajax_hooks()
+	{
+
+		$plugin_ajax = new No_Updates_Ajax($this->get_plugin_name(), $this->get_version());
+
+		$this->loader->add_action('wp_ajax_' . $this->get_plugin_name() . '-rate', $plugin_ajax, 'ajaxDoRate');
+		$this->loader->add_action('wp_ajax_' . $this->get_plugin_name() . '-remind', $plugin_ajax, 'ajaxDoRemind');
+		$this->loader->add_action('wp_ajax_' . $this->get_plugin_name() . '-cancel', $plugin_ajax, 'ajaxDoCancel');
 	}
 
 	/**
