@@ -16,7 +16,7 @@
  * Plugin Name:       No updates
  * Plugin URI:        https://tyganeutronics.com/no-updates
  * Description:       Suppress all plugin and theme updates
- * Version:           1.0.1
+ * Version:           1.0.0
  * Author:            Tyganeutronics
  * Author URI:        https://tyganeutronics.com
  * License:           GPL-2.0+

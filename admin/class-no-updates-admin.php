@@ -64,7 +64,7 @@ class No_Updates_Admin
 	 */
 	public function enqueue_styles()
 	{
-		//wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/no-updates-admin.css', array(), $this->version, 'all');
+		wp_register_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/no-updates-admin.css', array(), $this->version, 'all');
 	}
 
 	/**
@@ -75,46 +75,11 @@ class No_Updates_Admin
 	 */
 	public function enqueue_scripts()
 	{
-		//wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/no-updates-themes.js', array('jquery'), $this->version, false);
-
-	}
-
-	/**
-	 * Handle requested action
-	 * 
-	 * @since 1.0.0
-	 * @version 1.0.1
-	 * @return void
-	 */
-	function handle_action()
-	{
-
-		if (wp_verify_nonce(filter_input(INPUT_GET, $this->plugin_name . "-nonce"), $this->plugin_name)) {
-
-			switch (filter_input(INPUT_GET, $this->plugin_name . "-target")) {
-				case "rate":
-					//remind again in three months
-					set_transient($this->plugin_name . "-rate", true, defined("MONTH_IN_SECONDS") ? MONTH_IN_SECONDS * 3 : YEAR_IN_SECONDS / 4);
-
-					wp_redirect("https://wordpress.org/support/plugin/no-updates/reviews/");
-					exit;
-					break;
-				case "later":
-					//remind after a week
-					set_transient($this->plugin_name . "-rate", true, WEEK_IN_SECONDS * 7);
-
-					wp_redirect(remove_query_arg(array("action", $this->plugin_name . "-nonce", $this->plugin_name, $this->plugin_name . "-target"), $_SERVER['REQUEST_URI']));
-					exit;
-					break;
-				case "never":
-					set_transient($this->plugin_name . "-rate", true, YEAR_IN_SECONDS);
-
-					wp_redirect(remove_query_arg(array("action", $this->plugin_name . "-nonce", $this->plugin_name, $this->plugin_name . "-target"), $_SERVER['REQUEST_URI']));
-					exit;
-					break;
-				default:
-			}
-		}
+		wp_register_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/no-updates-themes.js', array('jquery'), $this->version, false);
+		wp_localize_script($this->plugin_name, "no_updates", array(
+			"ajax_url" => admin_url('admin-ajax.php'),
+			"name" => $this->plugin_name
+		));
 	}
 
 	/**
@@ -157,8 +122,11 @@ class No_Updates_Admin
 		/**
 		 * Request Rating
 		 */
-		if (boolval(get_transient($this->plugin_name . "-rate")) === false) {
-			include plugin_dir_path(__FILE__) . "partials/no-updates-admin-rating.php";
-		}
+		//if (boolval(get_transient($this->plugin_name . "-rate")) === false) {
+		wp_enqueue_script($this->plugin_name);
+		wp_enqueue_style($this->plugin_name);
+
+		include plugin_dir_path(__FILE__) . "partials/no-updates-admin-rating.php";
+		//}
 	}
 }
