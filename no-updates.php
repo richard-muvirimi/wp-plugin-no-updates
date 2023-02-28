@@ -8,77 +8,56 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://tyganeutronics.com
+ * @link              http://richard.co.zw
  * @since             1.0.0
- * @package           No_Updates
+ * @package           NoUpdates
  *
  * @wordpress-plugin
- * Plugin Name:       No updates
- * Plugin URI:        https://tyganeutronics.com/no-updates
- * Description:       Suppress all plugin and theme updates
- * Version:           1.0.0
- * Author:            Tyganeutronics
- * Author URI:        https://tyganeutronics.com
+ * Plugin Name:       No Updates
+ * Plugin URI:        https://github.com/richard-muvirimi/wp-plugin-no-updates
+ * Description:       Hide Plugin and Theme Updates with Ease: Say Goodbye to Broken Sites and Hassle-Free Maintenance
+ * Version:           1.1.0
+ * Author:            Richard Muvirimi
+ * Author URI:        http://richard.co.zw
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       no-updates
  * Domain Path:       /languages
  */
 
+use Rich4rdMuvirimi\NoUpdates\NoUpdates;
+
 // If this file is called directly, abort.
-if (!defined('WPINC')) {
-	die;
+if ( ! defined( 'WPINC' ) ) {
+    die;
 }
 
 /**
- * Currently plugin version.
- * Start at version 1.0.0 and use SemVer - https://semver.org
- * Rename this for your plugin and update it as you release new versions.
+ * The plugin slug, one source of truth for context
  */
-define('NO_UPDATES_VERSION', '1.0.0');
+const NO_UPDATES_SLUG = 'no-updates';
 
 /**
- * The code that runs during plugin activation.
- * This action is documented in includes/class-no-updates-activator.php
+ * Plugin version number
  */
-function activate_no_updates()
-{
-	require_once plugin_dir_path(__FILE__) . 'includes/class-no-updates-activator.php';
-	No_Updates_Activator::activate();
-}
+const NO_UPDATES_VERSION = '1.1.0';
 
 /**
- * The code that runs during plugin deactivation.
- * This action is documented in includes/class-no-updates-deactivator.php
+ * Reference to this file, and this file only, (well, plugin entry point)
  */
-function deactivate_no_updates()
-{
-	require_once plugin_dir_path(__FILE__) . 'includes/class-no-updates-deactivator.php';
-	No_Updates_Deactivator::deactivate();
-}
-
-register_activation_hook(__FILE__, 'activate_no_updates');
-register_deactivation_hook(__FILE__, 'deactivate_no_updates');
+const NO_UPDATES_FILE = __FILE__;
 
 /**
- * The core plugin class that is used to define internationalization,
- * admin-specific hooks, and public-facing site hooks.
+ * Plugin name as known to WordPress
  */
-require plugin_dir_path(__FILE__) . 'includes/class-no-updates.php';
+define( 'NO_UPDATES_NAME', plugin_basename( NO_UPDATES_FILE ) );
 
 /**
- * Begins execution of the plugin.
- *
- * Since everything within the plugin is registered via hooks,
- * then kicking off the plugin from this point in the file does
- * not affect the page life cycle.
- *
- * @since    1.0.0
+ * Load composer
  */
-function run_no_updates()
-{
+require plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 
-	$plugin = new No_Updates();
-	$plugin->run();
-}
-run_no_updates();
+/**
+ * And away we go
+ */
+NoUpdates::instance()->run();

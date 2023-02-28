@@ -1,52 +1,55 @@
 === No updates ===
 Contributors: tygalive
-Donate link: https://tyganeutronics.com
+Donate link: https://buymeacoffee.com/fpjyrXk
 Tags: plugin, theme, update, no update, disable update, hide update
 Requires at least: 4.0
-Tested up to: 5.8
-Stable tag: 1.0.0
+Tested up to: 6.1
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Hide plugin and theme updates
+Hide Plugin and Theme Updates with Ease: Say Goodbye to Broken Sites and Hassle-Free Maintenance
 
 == Description ==
 
-Want to hide plugin and theme updates, maybe because:
-1. You have a stagging site and do not want the main site to be tempered with.
-2. Stop users from updating the site and maybe ending up breaking the site.
-3. Have multiple sites and want to maintain same plugin and theme versions across all sites
+Are you looking for a way to hide plugin and theme updates on your WordPress site? Whether you have a staging site, want to prevent accidental updates that could break your site, or need to maintain consistent versions across multiple sites, this plugin can help.
 
-Just activate the plugin to hide updates and disable when you need to update
+Simply activate the plugin to hide updates, and disable it when you're ready to update. However, please note that updating your plugins and themes is highly recommended, as updates often include important security patches and new features.
 
-Note: Updating WordPress plugins and themes is highly recommended as updates usually bring security updates and sometimes restricted functionality ;P
+Protect your site from unwanted updates with this simple and effective plugin.
+
+This plugin also includes non-intrusive ads (shown only in the backend) that help support the ongoing development and maintenance of the plugin. Please see our privacy policy for information on data collection.
 
 == Installation ==
 
 = Automatic installation =
 
-Automatic installation is the easiest option -- WordPress will handle the file transfer, and you won’t need to leave your web browser. To do an automatic install of No Update, log in to your WordPress dashboard, navigate to the Plugins menu, and click “Add New.”
- 
-In the search field type “No Update”, then click “Search Plugins.” Once you’ve found us,  you can view details about it such as the point release, rating, and description. Most importantly of course, you can install it by! Clicking “Install Now,” and WordPress will take it from there.
+The easiest way to install No Updates is through the automatic installation option. To do this, simply log in to your WordPress dashboard, navigate to the Plugins menu, and click on "Add New."
+
+In the search field, type "No Updates," and click on "Search Plugins." Once you find our plugin, you can view details such as the rating, description, and the current version. To install the plugin, click on "Install Now," and let WordPress handle the file transfer for you.
 
 = Manual installation =
 
-1. Upload `no-updates` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
+1. Download the plugin zip file from the source (such as the WordPress plugin repository).
+2. Log in to your WordPress dashboard, navigate to the Plugins menu, and click “Add New.”
+3. Click the “Upload Plugin” button at the top of the page.
+4. Choose the plugin zip file you downloaded and click “Install Now.”
+5. Once the installation is complete, click the “Activate Plugin” button.
+6. You can now access the plugin through “No Updates” option in the admin menu.
 
 == Frequently Asked Questions ==
 
-= What it if I change my mind? =
+= How do I unhide plugin or theme updates? =
 
-Simple, Just disable the plugin, goto to the updates page and your full list of updates will be presented to you.
+Simply disable the plugin, go to the updates page, and you'll be able to see the full list of updates.
 
-= Is this permanent? =
+= Will the plugin hide updates permanently? =
 
-No the plugin and theme updates will only be hidden when the plugin is active
+No, the plugin will only hide plugin and theme updates while it is active.
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.0 - 1.1.0 =
 * Initial Release
 
 == Upgrade Notice ==

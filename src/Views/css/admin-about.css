@@ -1,0 +1,15 @@
+.no-updates .center {
+    text-align: center;
+}
+
+.no-updates {
+    margin-top: 1cm;
+}
+
+.no-updates input[type='checkbox'] {
+    margin-bottom: 15px;
+}
+
+.no-updates .wrap {
+    margin-top: 2cm;
+}

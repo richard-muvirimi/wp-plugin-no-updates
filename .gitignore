@@ -1,1 +1,12 @@
-no-updates.code-workspace
+*.code-workspace
+composer.lock
+/vendor/
+
+#Docker
+docker_tag
+Dockerfile-php-build
+DOCKER_ENV
+output.log
+
+.idea
+.phpunit.result.cache
