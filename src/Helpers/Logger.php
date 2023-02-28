@@ -2,12 +2,12 @@
 
 namespace Rich4rdMuvirimi\NoUpdates\Helpers;
 
-use Br33f\Ga4\MeasurementProtocol\Dto\Common\UserProperty;
-use Br33f\Ga4\MeasurementProtocol\Dto\Event\BaseEvent;
-use Br33f\Ga4\MeasurementProtocol\Dto\Parameter\BaseParameter;
-use Br33f\Ga4\MeasurementProtocol\Dto\Request\BaseRequest;
-use Br33f\Ga4\MeasurementProtocol\Service;
-use ClientIP;
+use Rich4rdMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Dto\Common\UserProperty;
+use Rich4rdMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Dto\Event\BaseEvent;
+use Rich4rdMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Dto\Parameter\BaseParameter;
+use Rich4rdMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Dto\Request\BaseRequest;
+use Rich4rdMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Service;
+use NoUpdates_ClientIP as ClientIP;
 use Exception;
 
 /**

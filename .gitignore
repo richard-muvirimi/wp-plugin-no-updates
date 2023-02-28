@@ -8,5 +8,5 @@ Dockerfile-php-build
 DOCKER_ENV
 output.log
 
-.idea
+.idea/
 .phpunit.result.cache
