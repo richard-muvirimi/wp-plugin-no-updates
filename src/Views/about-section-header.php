@@ -2,6 +2,8 @@
 
 namespace Rich4rdMuvirimi\NoUpdates\Views;
 
+use Rich4rdMuvirimi\NoUpdates\Helpers\Functions;
+
 /**
  * Section options header
  *
@@ -16,4 +18,4 @@ namespace Rich4rdMuvirimi\NoUpdates\Views;
 
 ?>
 
-<p><?php _e("Analytics Options", NO_UPDATES_SLUG) ?></p>
+<p><?php _e("Analytics Options", Functions::get_plugin_slug()) ?></p>

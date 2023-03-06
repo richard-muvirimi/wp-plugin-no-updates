@@ -35,6 +35,6 @@ class I18n
      */
     public function load_plugin_textdomain()
     {
-        load_plugin_textdomain(NO_UPDATES_SLUG, false, plugin_dir_path(NO_UPDATES_FILE) . 'languages');
+        load_plugin_textdomain(Functions::get_plugin_slug(), false, plugin_dir_path(NO_UPDATES_FILE) . 'languages');
     }
 }

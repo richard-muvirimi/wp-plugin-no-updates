@@ -5,7 +5,7 @@
 - **_Tags:_** plugin, theme, update, no update, disable update, hide update
 - **_Requires at least:_** 4.0
 - **_Tested up to:_** 6.1
-- **_Stable tag:_** 1.1.1
+- **_Stable tag:_** 1.1.2
 - **_License:_** GPLv2 or later
 - **_License URI:_** http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,7 +50,7 @@ No, the plugin will only hide plugin and theme updates while it is active.
 
 ## Changelog
 
-**_1.0.0 - 1.1.1 _**
+**_1.0.0 - 1.1.2 _**
 
 - Initial Release
 
