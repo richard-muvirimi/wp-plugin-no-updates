@@ -55,7 +55,7 @@ class Admin extends BaseController
         wp_register_script(Functions::get_plugin_slug("-rate"), Template::get_script_url('admin-rating.js'), array('jquery'), NO_UPDATES_VERSION);
         wp_localize_script(Functions::get_plugin_slug("-rate"), "no_updates", array(
             "ajax_url" => admin_url('admin-ajax.php'),
-            "name" => NO_UPDATES_SLUG
+            "name" => Functions::get_plugin_slug()
         ));
     }
 
@@ -118,13 +118,13 @@ class Admin extends BaseController
 
         add_settings_field(
             Functions::get_plugin_slug("-analytics"),
-            __('Collect Anonymous Usage Data', NO_UPDATES_SLUG),
+            __('Collect Anonymous Usage Data', Functions::get_plugin_slug()),
             array($this, 'renderInputField'),
             Functions::get_plugin_slug("-about"),
             Functions::get_plugin_slug("-settings"),
             array(
                 'label_for' => Functions::get_plugin_slug("-analytics"),
-                'class' => NO_UPDATES_SLUG . '-row',
+                'class' => Functions::get_plugin_slug( '-row'),
                 "value" => get_option(Functions::get_plugin_slug("-analytics"), "off"),
                 'description' => Template::get_template(Functions::get_plugin_slug("-about-analytics-disclaimer"), [], "about-analytics-disclaimer.php"),
                 "type" => "checkbox",
@@ -170,8 +170,8 @@ class Admin extends BaseController
     public function on_admin_menu()
     {
         add_menu_page(
-            __('No Updates', NO_UPDATES_SLUG),
-            __('No Updates', NO_UPDATES_SLUG),
+            __('No Updates', Functions::get_plugin_slug()),
+            __('No Updates', Functions::get_plugin_slug()),
             'manage_options',
             Functions::get_plugin_slug(),
             [$this, 'renderAboutPage'],

@@ -41,7 +41,6 @@ class Ajax extends BaseController
     public function ajaxDoRate(): void
     {
         if (check_ajax_referer(Functions::get_plugin_slug("-rate-enable"), "_ajax_nonce", false) !== false) {
-
             //remind again in three months
             set_transient(Functions::get_plugin_slug("-rate"), true, YEAR_IN_SECONDS / 2);
 
@@ -60,11 +59,10 @@ class Ajax extends BaseController
      * @since 1.0.2
      *
      */
-    public function ajaxDoRemind(): void
+    public function ajaxDoRemindRate(): void
     {
 
         if (check_ajax_referer(Functions::get_plugin_slug("-rate-remind"), "_ajax_nonce", false) !== false) {
-
             //remind after a week
             set_transient(Functions::get_plugin_slug("-rate"), true, WEEK_IN_SECONDS);
 
@@ -83,10 +81,9 @@ class Ajax extends BaseController
      * @since 1.0.2
      *
      */
-    public function ajaxDoCancel(): void
+    public function ajaxDoCancelRate(): void
     {
         if (check_ajax_referer(Functions::get_plugin_slug("-rate-cancel"), "_ajax_nonce", false) !== false) {
-
             set_transient(Functions::get_plugin_slug("-rate"), true, YEAR_IN_SECONDS);
 
             Logger::logEvent("rate_plugin_declined");
@@ -108,7 +105,6 @@ class Ajax extends BaseController
     {
 
         if (check_ajax_referer(Functions::get_plugin_slug('-analytics-enable'), '_ajax_nonce', false) !== false) {
-
             // remind again in three months
             set_transient(Functions::get_plugin_slug('-analytics'), true, YEAR_IN_SECONDS / 2);
 
@@ -134,7 +130,6 @@ class Ajax extends BaseController
     {
 
         if (check_ajax_referer(Functions::get_plugin_slug('-analytics-remind'), '_ajax_nonce', false) !== false) {
-
             // remind after a week
             set_transient(Functions::get_plugin_slug('-analytics'), true, WEEK_IN_SECONDS);
 
@@ -159,7 +154,6 @@ class Ajax extends BaseController
     public function ajaxDoCancelAnalytics(): void
     {
         if (check_ajax_referer(Functions::get_plugin_slug('-analytics-cancel'), '_ajax_nonce', false) !== false) {
-
             set_transient(Functions::get_plugin_slug('-analytics'), true, YEAR_IN_SECONDS);
 
             Logger::logEvent("analytics_plugin_declined");
@@ -172,5 +166,4 @@ class Ajax extends BaseController
             );
         }
     }
-
 }
