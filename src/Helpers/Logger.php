@@ -63,9 +63,6 @@ class Logger
                     $baseRequest->addUserProperty(new UserProperty("wordpress_version", get_bloginfo("version")));
                     $baseRequest->addUserProperty(new UserProperty("plugin_version", NO_UPDATES_VERSION));
 
-                    $woocommerce = get_plugin_data(WP_PLUGIN_DIR . DIRECTORY_SEPARATOR . "woocommerce/woocommerce.php");
-                    $baseRequest->addUserProperty(new UserProperty("woocommerce_version", $woocommerce["Version"]));
-
                     $baseEvent = new BaseEvent($event);
 
                     // Create Base Event
