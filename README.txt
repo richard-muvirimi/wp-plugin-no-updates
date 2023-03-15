@@ -4,7 +4,7 @@ Donate link: https://buymeacoffee.com/fpjyrXk
 Tags: plugin, theme, update, no update, disable update, hide update
 Requires at least: 4.0
 Tested up to: 6.1
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,7 +49,7 @@ No, the plugin will only hide plugin and theme updates while it is active.
 
 == Changelog ==
 
-= 1.0.0 - 1.1.3 =
+= 1.0.0 - 1.1.4 =
 * Initial Release
 
 == Upgrade Notice ==

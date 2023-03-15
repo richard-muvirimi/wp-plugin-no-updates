@@ -16,7 +16,7 @@
  * Plugin Name:       No Updates
  * Plugin URI:        https://github.com/richard-muvirimi/wp-plugin-no-updates
  * Description:       Hide Plugin and Theme Updates with Ease: Say Goodbye to Broken Sites and Hassle-Free Maintenance
- * Version:           1.1.3
+ * Version:           1.1.4
  * Author:            Richard Muvirimi
  * Author URI:        http://richard.co.zw
  * License:           GPL-2.0+
@@ -40,7 +40,7 @@ const NO_UPDATES_SLUG = 'no-updates';
 /**
  * Plugin version number
  */
-const NO_UPDATES_VERSION = '1.1.3';
+const NO_UPDATES_VERSION = '1.1.4';
 
 /**
  * Reference to this file, and this file only, (well, plugin entry point)
