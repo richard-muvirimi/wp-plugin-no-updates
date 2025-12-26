@@ -32,6 +32,9 @@
             "@phpcs",
             "@test"
         ],
+        "bump-version": [
+            "@php bump-version.php"
+        ],
         "phpcs": [
             "vendor/bin/phpcs ."
         ],
@@ -65,12 +68,18 @@
             "@php ./mozart.phar compose",
             "@composer dump-autoload",
             "@php -r \"@unlink('./mozart.phar');\""
+        ],
+        "docker:up" : [
+            "sudo docker-compose -f docker-compose.yml up -d"
+        ],
+        "docker:down" : [
+            "sudo docker-compose -f docker-compose.yml down"
         ]
     },
     "authors": [
         {
             "name": "Richard Muvirimi",
-            "email": "rich4rdmuvirimi@gmail.com",
+            "email": "richard@tyganeutronics.com",
             "homepage": "https://richard.co.zw",
             "role": "Developer"
         }
@@ -78,18 +87,21 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.3",
-        "symfony/polyfill-php74": "*",
-        "symfony/polyfill-php80": "*",
-        "symfony/polyfill-php81": "*",
-        "symfony/polyfill-php82": "*",
-        "br33f/php-ga4-mp": "^0.1.2",
-        "yidas/client-ip": "^1.0",
-        "ext-json": "*"
+        "ext-json": "*",
+        "br33f/php-ga4-mp": "^0.1.4",
+        "symfony/polyfill-php74": "^1.33",
+        "symfony/polyfill-php80": "^1.33",
+        "symfony/polyfill-php81": "^1.33",
+        "symfony/polyfill-php82": "^1.33",
+        "symfony/polyfill-php83": "^1.33",
+        "symfony/polyfill-php84": "^1.33",
+        "symfony/polyfill-php85": "^1.33",
+        "yidas/client-ip": "^1.0"
     },
     "require-dev": {
         "phpcompatibility/phpcompatibility-wp": "^2.1",
         "brain/monkey": "^2.6",
-        "phpunit/phpunit": "^8",
+        "phpunit/phpunit": "^8.5",
         "squizlabs/php_codesniffer": "^3.7",
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
     },

@@ -16,7 +16,7 @@ use Exception;
  * @package NoUpdates
  * @subpackage NoUpdates/Helpers
  *
- * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+ * @author Richard Muvirimi <richard@tyganeutronics.com>
  * @since 1.1.0
  * @version 1.1.0
  */
@@ -31,7 +31,7 @@ class Logger
      * @since 1.1.0
      * @version 1.1.0
      *
-     * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+     * @author Richard Muvirimi <richard@tyganeutronics.com>
      */
     public static function logEvent(string $event): void
     {
@@ -106,7 +106,7 @@ class Logger
      * @since 1.1.0
      * @version 1.1.0
      *
-     * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+     * @author Richard Muvirimi <richard@tyganeutronics.com>
      */
     public static function fetchAnalyticsCredentials()
     {
@@ -141,7 +141,7 @@ class Logger
      * @since 1.1.0
      * @version 1.1.0
      *
-     * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+     * @author Richard Muvirimi <richard@tyganeutronics.com>
      */
     public static function getUserAgent(): string
     {
@@ -155,7 +155,7 @@ class Logger
      * @since 1.1.0
      * @version 1.1.0
      *
-     * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+     * @author Richard Muvirimi <richard@tyganeutronics.com>
      */
     public static function getSessionId(): string
     {
@@ -178,7 +178,7 @@ class Logger
      * @since 1.1.0
      * @version 1.1.0
      *
-     * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+     * @author Richard Muvirimi <richard@tyganeutronics.com>
      */
     public static function getEngagementTime(): float
     {

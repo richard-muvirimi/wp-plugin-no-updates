@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="No Updates" namespace="Rich4rdMuvirimi\NoUpdates\">
+<ruleset name="No Updates" namespace="RichardMuvirimi\NoUpdates\">
 <description>Coding Standards for No Updates and Php 7.3</description>
 
 <config name="testVersion" value="7.3-"/>

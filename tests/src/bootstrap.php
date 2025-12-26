@@ -2,6 +2,9 @@
 /**
  * Phpunit bootstrap file for running tests
  *
+ * phpcs:disable WordPress.VIP.RestrictedFunctions.file_get_contents_file_get_contents
+ * phpcs:disable WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+ * phpcs:disable WordPress.WP.AlternativeFunctions.file_system_read_file_get_contents
  */
 
 $root = __DIR__;
@@ -11,10 +14,9 @@ do {
 
     // break if we don't find the file
     if (strrpos($root, DIRECTORY_SEPARATOR, intval(strpos($root, PATH_SEPARATOR))) < 3) {
-        define('NO_UPDATES_SLUG', 'no-updates');
-        break;
+        throw new Exception("Base Plugin file not found");
     }
-} while (!file_exists($root . '/no-updates.php'));
+} while (!file_exists($root . DIRECTORY_SEPARATOR .'no-updates.php'));
 
 /**
  * WP loaded check constant
@@ -24,7 +26,7 @@ const WPINC = 'wp-includes';
 /**
  * Reference to this file
  */
-const NO_UPDATES_FILE = __FILE__;
+define("NO_UPDATES_FILE", $root . DIRECTORY_SEPARATOR . 'no-updates.php');
 
 /**
  * Method stubs
@@ -65,18 +67,22 @@ if (!function_exists('register_uninstall_hook')) {
     {
     }
 }
+if (!function_exists('plugin_basename')) {
 
-/**
- * Load constants, no need for the actual value
- */
-$content = file_get_contents($root . '/no-updates.php');
-
-preg_match_all('/define\("(.*?)",\s?"?(.*?)"?\);/m', $content, $matches);
-
-$matches = array_combine($matches[1], $matches[2]);
-
-foreach ($matches as $constant => $value) {
-    if (!defined($constant)) {
-        define($constant, $value);
+    function plugin_basename(string $file):string
+    {
+        return basename($file, ".php") . "/" . basename($file);
     }
 }
+
+/**
+ * Load constants
+ */
+$content = file_get_contents(NO_UPDATES_FILE);
+
+preg_match('/#region\sConstants(.*)#endregion\sConstants/s', $content, $matches);
+
+eval($matches[1]);
+
+// clean up
+unset($content, $matches);

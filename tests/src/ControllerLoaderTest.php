@@ -2,7 +2,7 @@
 /**
  * File for php unit testcases
  *
- * @author Richard Muvirimi <tygalive@gmail.com>
+ * @author Richard Muvirimi <richard@tyganeutronics.com>
  * @since 1.0.0
  * @version 1.0.0
  */
@@ -17,7 +17,7 @@ use Rich4rdMuvirimi\NoUpdates\NoUpdates;
 /**
  * Test Cases class
  *
- * @author Richard Muvirimi <tygalive@gmail.com>
+ * @author Richard Muvirimi <richard@tyganeutronics.com>
  * @since 1.0.0
  * @version 1.0.0
  */
@@ -31,7 +31,7 @@ class ControllerLoaderTest extends TestCase
      * Test the loader class magic methods
      *
      * @return void
-     * @version 1.0.0
+     * @version 1.1.5
      * @since 1.0.0
      */
     public function testHooks(): void
@@ -40,13 +40,19 @@ class ControllerLoaderTest extends TestCase
         $loader->add_action('init', '__return_true', 25);
         $loader->add_filter('the_title', '__return_true', 25);
 
+        // constants loaded
+        self::assertTrue(NO_UPDATES_VERSION !== null, "NO_UPDATES_VERSION is null");
+        self::assertTrue(NO_UPDATES_NAME !== null, "NO_UPDATES_NAME is null");
+        self::assertTrue(NO_UPDATES_FILE !== null,  "NO_UPDATES_FILE is null");
+        self::assertTrue(NO_UPDATES_SLUG !== null, "NO_UPDATES_SLUG is null");
+
         // assert added.
-        self::assertNotFalse(has_action('init', '__return_true'));
-        self::assertNotFalse(has_filter('the_title', '__return_true'));
+        self::assertNotFalse(has_action('init', '__return_true'), "init action not added");
+        self::assertNotFalse(has_filter('the_title', '__return_true'), "the_title filter not added");
 
         // assert priority.
-        self::assertSame(25, has_action('init', '__return_true'));
-        self::assertSame(25, has_filter('the_title', '__return_true'));
+        self::assertSame(25, has_action('init', '__return_true'), "init action priority not 25");
+        self::assertSame(25, has_filter('the_title', '__return_true'), "the_title filter priority not 25");
     }
 
     /**

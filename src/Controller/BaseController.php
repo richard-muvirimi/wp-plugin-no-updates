@@ -7,7 +7,7 @@
  * @package NoUpdates
  * @subpackage NoUpdates/Controller
  *
- * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+ * @author Richard Muvirimi <richard@tyganeutronics.com>
  * @since 1.1.0
  * @version 1.1.0
  */
@@ -20,7 +20,7 @@ namespace Rich4rdMuvirimi\NoUpdates\Controller;
  * @package NoUpdates
  * @subpackage NoUpdates/Controller
  *
- * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+ * @author Richard Muvirimi <richard@tyganeutronics.com>
  * @since 1.1.0
  * @version 1.1.0
  */

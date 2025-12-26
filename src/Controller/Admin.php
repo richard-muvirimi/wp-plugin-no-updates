@@ -5,7 +5,7 @@
  * @package NoUpdates
  * @subpackage NoUpdates/Controller
  *
- * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+ * @author Richard Muvirimi <richard@tyganeutronics.com>
  * @since 1.0.0
  * @version 1.0.0
  */
@@ -22,7 +22,7 @@ use Rich4rdMuvirimi\NoUpdates\Helpers\Template;
  * @package NoUpdates
  * @subpackage NoUpdates/Controller
  *
- * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+ * @author Richard Muvirimi <richard@tyganeutronics.com>
  * @since 1.0.0
  * @version 1.0.1
  */
@@ -66,7 +66,7 @@ class Admin extends BaseController
      * @version 1.0.1
      * @since 1.0.0
      *
-     * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+     * @author Richard Muvirimi <richard@tyganeutronics.com>
      */
     public function showAdminNotices(): void
     {
@@ -96,7 +96,7 @@ class Admin extends BaseController
      * Register plugin options
      *
      * @return void
-     * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+     * @author Richard Muvirimi <richard@tyganeutronics.com>
      * @since 1.1.0
      * @version 1.1.0
      */
@@ -139,7 +139,7 @@ class Admin extends BaseController
      * @since 1.1.0
      * @version 1.1.0
      *
-     * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+     * @author Richard Muvirimi <richard@tyganeutronics.com>
      */
     public function renderSectionHeader(): void
     {
@@ -155,7 +155,7 @@ class Admin extends BaseController
      * @since 1.0.0
      * @version 1.0.0
      *
-     * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+     * @author Richard Muvirimi <richard@tyganeutronics.com>
      */
     public function renderInputField(array $args): void
     {
@@ -187,7 +187,7 @@ class Admin extends BaseController
      * @since 1.1.0
      * @version 1.1.0
      *
-     * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+     * @author Richard Muvirimi <richard@tyganeutronics.com>
      */
     public function renderAboutPage(): void
     {

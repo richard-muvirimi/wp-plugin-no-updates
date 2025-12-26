@@ -15,8 +15,8 @@
  * @wordpress-plugin
  * Plugin Name:       No Updates
  * Plugin URI:        https://github.com/richard-muvirimi/wp-plugin-no-updates
- * Description:       Hide Plugin and Theme Updates with Ease: Say Goodbye to Broken Sites and Hassle-Free Maintenance
- * Version:           1.1.4
+ * Description:       Hide Plugin and Theme Updates with Ease: Say Goodbye to Broken Sites and Hello Hassle-Free Maintenance
+ * Version:           1.1.5
  * Author:            Richard Muvirimi
  * Author URI:        http://richard.co.zw
  * License:           GPL-2.0+
@@ -33,6 +33,13 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /**
+ * Reference to this file, and this file only, (well, plugin entry point)
+ */
+const NO_UPDATES_FILE = __FILE__;
+
+#region Constants 
+
+/**
  * The plugin slug, one source of truth for context
  */
 const NO_UPDATES_SLUG = 'no-updates';
@@ -40,17 +47,16 @@ const NO_UPDATES_SLUG = 'no-updates';
 /**
  * Plugin version number
  */
-const NO_UPDATES_VERSION = '1.1.4';
-
-/**
- * Reference to this file, and this file only, (well, plugin entry point)
- */
-const NO_UPDATES_FILE = __FILE__;
+const NO_UPDATES_VERSION = '1.1.5';
 
 /**
  * Plugin name as known to WordPress
  */
 define( 'NO_UPDATES_NAME', plugin_basename( NO_UPDATES_FILE ) );
+
+#endregion Constants
+
+
 
 /**
  * Load composer

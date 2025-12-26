@@ -4,12 +4,12 @@
 - **_Donate link:_** https://buymeacoffee.com/fpjyrXk
 - **_Tags:_** plugin, theme, update, no update, disable update, hide update
 - **_Requires at least:_** 4.0
-- **_Tested up to:_** 6.1
-- **_Stable tag:_** 1.1.4
+- **_Tested up to:_** 6.9
+- **_Stable tag:_** 1.1.5
 - **_License:_** GPLv2 or later
 - **_License URI:_** http://www.gnu.org/licenses/gpl-2.0.html
 
-Hide Plugin and Theme Updates with Ease: Say Goodbye to Broken Sites and Hassle-Free Maintenance
+Hide Plugin and Theme Updates with Ease: Say Goodbye to Broken Sites and Hello Hassle-Free Maintenance
 
 ## Description
 
@@ -49,6 +49,10 @@ Simply disable the plugin, go to the updates page, and you'll be able to see the
 No, the plugin will only hide plugin and theme updates while it is active.
 
 ## Changelog
+
+**_1.1.5 _**
+
+- Minor Optimizations
 
 **_1.0.0 - 1.1.4 _**
 

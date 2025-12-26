@@ -5,7 +5,7 @@
  * @package NoUpdates
  * @subpackage NoUpdates/Locale
  *
- * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+ * @author Richard Muvirimi <richard@tyganeutronics.com>
  * @since 1.0.0
  * @version 1.0.0
  */
@@ -18,7 +18,7 @@ namespace Rich4rdMuvirimi\NoUpdates\Locale;
  * @package NoUpdates
  * @subpackage NoUpdates/Locale
  *
- * @author Richard Muvirimi <rich4rdmuvirimi@gmail.com>
+ * @author Richard Muvirimi <richard@tyganeutronics.com>
  * @since 1.0.0
  * @version 1.0.0
  */
