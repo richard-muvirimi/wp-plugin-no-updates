@@ -80,7 +80,7 @@ $files = [
     // readme.md - Stable tag
     [
         'file' => findFile($rootDir, 'readme.md'),
-        'pattern' => '/(\*\*_Stable tag:_\*\*\s+)\d+\.\d+\.\d+/',
+        'pattern' => '/(\*\*_Stable tag:_\*\* )\d+\.\d+\.\d+/',
         'replacement' => '${1}' . $newVersion,
         'description' => 'readme.md stable tag'
     ],

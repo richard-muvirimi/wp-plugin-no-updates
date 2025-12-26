@@ -5,7 +5,7 @@
 - **_Tags:_** plugin, theme, update, no update, disable update, hide update
 - **_Requires at least:_** 4.0
 - **_Tested up to:_** 6.9
-- **_Stable tag:_** 1.1.7
+- **_Stable tag:_** 1.1.8
 - **_License:_** GPLv2 or later
 - **_License URI:_** http://www.gnu.org/licenses/gpl-2.0.html
 
