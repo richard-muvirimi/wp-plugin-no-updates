@@ -25,7 +25,7 @@
  * Domain Path:       /languages
  */
 
-use Rich4rdMuvirimi\NoUpdates\NoUpdates;
+use RichardMuvirimi\NoUpdates\NoUpdates;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Rich4rdMuvirimi\NoUpdates\Views;
+namespace RichardMuvirimi\NoUpdates\Views;
 
-use Rich4rdMuvirimi\NoUpdates\Helpers\Functions;
-use Rich4rdMuvirimi\NoUpdates\Helpers\Template;
+use RichardMuvirimi\NoUpdates\Helpers\Functions;
+use RichardMuvirimi\NoUpdates\Helpers\Template;
 
 if (!defined('WPINC')) {
     die(); // Exit if accessed directly.

@@ -12,7 +12,7 @@
  * @version 1.0.2
  */
 
-namespace Rich4rdMuvirimi\NoUpdates\Controller;
+namespace RichardMuvirimi\NoUpdates\Controller;
 
 /**
  * Site side controller

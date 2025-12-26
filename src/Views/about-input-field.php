@@ -1,6 +1,6 @@
 <?php
 
-namespace Rich4rdMuvirimi\NoUpdates\Views;
+namespace RichardMuvirimi\NoUpdates\Views;
 
 /**
  * Display text field option

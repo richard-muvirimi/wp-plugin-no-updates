@@ -11,7 +11,7 @@
  * @version 1.0.0
  */
 
-namespace Rich4rdMuvirimi\NoUpdates\Helpers;
+namespace RichardMuvirimi\NoUpdates\Helpers;
 
 /**
  * Class to handle plugin helper functions

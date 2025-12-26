@@ -1,6 +1,6 @@
 <?php
 
-namespace Rich4rdMuvirimi\NoUpdates\Views;
+namespace RichardMuvirimi\NoUpdates\Views;
 
 if (!defined('WPINC')) {
     die(); // Exit if accessed directly.

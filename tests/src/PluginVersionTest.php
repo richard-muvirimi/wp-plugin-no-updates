@@ -8,7 +8,7 @@
  * @version 1.1.5
  */
 
-namespace Rich4rdMuvirimi\NoUpdates\Tests;
+namespace RichardMuvirimi\NoUpdates\Tests;
 
 use Brain\Monkey;
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;

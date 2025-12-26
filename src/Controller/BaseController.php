@@ -12,7 +12,7 @@
  * @version 1.1.0
  */
 
-namespace Rich4rdMuvirimi\NoUpdates\Controller;
+namespace RichardMuvirimi\NoUpdates\Controller;
 
 /**
  * Base controller to rule them all

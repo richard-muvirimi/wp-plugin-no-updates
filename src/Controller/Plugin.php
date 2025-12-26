@@ -12,10 +12,10 @@
  * @version 1.0.0
  */
 
-namespace Rich4rdMuvirimi\NoUpdates\Controller;
+namespace RichardMuvirimi\NoUpdates\Controller;
 
-use Rich4rdMuvirimi\NoUpdates\Helpers\Functions;
-use Rich4rdMuvirimi\NoUpdates\Helpers\Logger;
+use RichardMuvirimi\NoUpdates\Helpers\Functions;
+use RichardMuvirimi\NoUpdates\Helpers\Logger;
 
 /**
  * Plugin controller

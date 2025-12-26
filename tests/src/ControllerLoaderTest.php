@@ -7,12 +7,12 @@
  * @version 1.0.0
  */
 
-namespace Rich4rdMuvirimi\NoUpdates\Tests;
+namespace RichardMuvirimi\NoUpdates\Tests;
 
 use Brain\Monkey;
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 use PHPUnit\Framework\TestCase;
-use Rich4rdMuvirimi\NoUpdates\NoUpdates;
+use RichardMuvirimi\NoUpdates\NoUpdates;
 
 /**
  * Test Cases class

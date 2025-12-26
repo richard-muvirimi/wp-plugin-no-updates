@@ -10,7 +10,9 @@
  * @version 1.0.0
  */
 
-namespace Rich4rdMuvirimi\NoUpdates\Locale;
+namespace RichardMuvirimi\NoUpdates\Locale;
+
+use RichardMuvirimi\NoUpdates\Helpers\Functions;
 
 /**
  * Class to handle plugin translations

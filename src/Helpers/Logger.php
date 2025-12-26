@@ -1,12 +1,12 @@
 <?php
 
-namespace Rich4rdMuvirimi\NoUpdates\Helpers;
+namespace RichardMuvirimi\NoUpdates\Helpers;
 
-use Rich4rdMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Dto\Common\UserProperty;
-use Rich4rdMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Dto\Event\BaseEvent;
-use Rich4rdMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Dto\Parameter\BaseParameter;
-use Rich4rdMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Dto\Request\BaseRequest;
-use Rich4rdMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Service;
+use RichardMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Dto\Common\UserProperty;
+use RichardMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Dto\Event\BaseEvent;
+use RichardMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Dto\Parameter\BaseParameter;
+use RichardMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Dto\Request\BaseRequest;
+use RichardMuvirimi\NoUpdates\Vendor\Br33f\Ga4\MeasurementProtocol\Service;
 use NoUpdates_ClientIP as ClientIP;
 use Exception;
 

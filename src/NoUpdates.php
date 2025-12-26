@@ -12,15 +12,15 @@
  * @version 1.0.2
  */
 
-namespace Rich4rdMuvirimi\NoUpdates;
+namespace RichardMuvirimi\NoUpdates;
 
 use BadMethodCallException;
-use Rich4rdMuvirimi\NoUpdates\Controller\Admin;
-use Rich4rdMuvirimi\NoUpdates\Controller\Ajax;
-use Rich4rdMuvirimi\NoUpdates\Controller\Plugin;
-use Rich4rdMuvirimi\NoUpdates\Controller\Site;
-use Rich4rdMuvirimi\NoUpdates\Helpers\Functions;
-use Rich4rdMuvirimi\NoUpdates\Locale\I18n;
+use RichardMuvirimi\NoUpdates\Controller\Admin;
+use RichardMuvirimi\NoUpdates\Controller\Ajax;
+use RichardMuvirimi\NoUpdates\Controller\Plugin;
+use RichardMuvirimi\NoUpdates\Controller\Site;
+use RichardMuvirimi\NoUpdates\Helpers\Functions;
+use RichardMuvirimi\NoUpdates\Locale\I18n;
 
 /**
  * Class to bootstrap the plugin
