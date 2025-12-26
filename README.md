@@ -50,6 +50,11 @@ No, the plugin will only hide plugin and theme updates while it is active.
 
 ## Changelog
 
+**_1.1.6 _**
+
+- Update WordPress tested version to 6.9
+- Minor optimizations
+
 **_1.1.5 _**
 
 - Minor Optimizations
