@@ -37,7 +37,7 @@ function findFile($dir, $pattern) {
     $caseInsensitivePattern = '';
     for ($i = 0; $i < strlen($pattern); $i++) {
         $char = $pattern[$i];
-        if (ctype_alpha($char)) {
+        if (preg_match('/[a-zA-Z]/', $char)) {
             $caseInsensitivePattern .= '[' . strtoupper($char) . strtolower($char) . ']';
         } else {
             $caseInsensitivePattern .= $char;
